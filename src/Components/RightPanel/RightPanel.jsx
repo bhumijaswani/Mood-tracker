@@ -53,10 +53,10 @@ function MoodMessageCard({ mood, isSelected }) {
       <span className="text-7xl shrink-0">{emojis[mood]}</span>
 
       <div className="flex flex-col gap-2">
-        <h3 className={`text-2xl ${data.titleColor}`}>
+        <h3 className={`text-3xl ${data.titleColor}`}>
           {data.title}
         </h3>
-        <p className="text-1xl text-gray-500 leading-relaxed">
+        <p className="text-2xl text-gray-500 leading-relaxed">
           {data.message}
         </p>
         <span className={`text-xl font-medium px-5 py-2 rounded-full w-fit text-center ${data.tagBg} ${data.titleColor}`}>
@@ -70,7 +70,7 @@ function MoodMessageCard({ mood, isSelected }) {
 function RightPanel({ selectedMood }) {
   return (
     <div className="flex flex-col gap-4">
-      <h2 className="text-3xl font-bold text-center text-pink-700 py-2">
+      <h2 className="text-4xl font-semibold text-center text-pink-700 py-2">
          Mood Updated Messages ✨
       </h2>
 
